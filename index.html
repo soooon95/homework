@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부티빌더</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>상품 판매</title>
+    <style>
+        .style {
+            width: 1000px;
+            margin: 0 auto 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>부티빌더</h1>
-    <div>
-        <p>
-            수량: <input type="text" />
-        </p>
-        <p>
-            성명: <input type="text" />
-        </p>
-        <p>
-            주소: <input type="text" />
-        </p>
-        <p>
-            번호: <input type="text" />
-        </p>
+    <div class="style">
+        <div>
+            <img class="img"
+                src=https://bootybuilder.com/wp-content/uploads/BB_Platinum-NEW-2020-768x768.jpg
+                alt="상품 사진">
+        </div>
+        <div>
+            <p class="h1">
+                부티빌더 <a class="h5">가격 : 3,000,000 원 / 1개</a>
+            </p>
+            <P class="h5">사과같은 엉덩이의 비결</P>
+        </div>
+        <div>
+            <p class="h1">주문 하기</p>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">주문자 성함</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">수량</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">주소</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput3">전화번호</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3">
+                </div>
+            </form>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">주문 하기</button>
+        </div>
     </div>
-    <button>주문하기</button>
 </body>
+
 </html>
