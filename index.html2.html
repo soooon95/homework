@@ -28,34 +28,33 @@
             let count = $('#oder_count').val();
             let address = $('#oder_address').val();
             let phone = $('#oder_phone').val();
-      
-            if (name == ''){
+
+            if (name == '') {
                 alert('이름을 입력해주세요')
                 $('#oder_name').focus()
-                return 
-            } els if (count == ''){
-          alert('수량을 입력해주세요')
-          $('#order_count').focus()
-          return
-        } else if (address == ''){
-          alert('주소를 입력해주세요')
-          $('#order_address').focus()
-          return
-        } else if (phone == ''){
-          alert('휴대폰번호를 입력해주세요')
-          $('#order_phone').focus()
-          return
+                return
+            } els if (count == '') {
+                alert('수량을 입력해주세요')
+                $('#order_count').focus()
+                return
+            } else if (address == '') {
+                alert('주소를 입력해주세요')
+                $('#order_address').focus()
+                return
+            } else if (phone == '') {
+                alert('휴대폰번호를 입력해주세요')
+                $('#order_phone').focus()
+                return
+            } else alert ('주문완료!')
         }
-        }
-      </script>
-      
+    </script>
+
 </head>
 
 <body>
     <div class="style">
         <div>
-            <img class="img"
-                src=https://bootybuilder.com/wp-content/uploads/BB_Platinum-NEW-2020-768x768.jpg
+            <img class="img" src=https://bootybuilder.com/wp-content/uploads/BB_Platinum-NEW-2020-768x768.jpg
                 alt="상품 사진">
         </div>
         <div>
@@ -68,11 +67,11 @@
             <p class="h1">주문 하기</p>
             <form>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">주문자 성함</label>
+                    <label for="order_name">주문자 성함</label>
                     <input type="email" class="form-control" id="order_name">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">수량</label>
+                    <label for="oder_count">수량</label>
                     <select class="form-control" id="oder_count">
                         <option>1</option>
                         <option>2</option>
@@ -81,11 +80,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput2">주소</label>
+                    <label for="oder_address">주소</label>
                     <input type="text" class="form-control" id="oder_address">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput3">전화번호</label>
+                    <label for="oder_phone">전화번호</label>
                     <input type="text" class="form-control" id="oder_phone">
                 </div>
             </form>
