@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>상품 판매</title>
+    <style>
+        .style {
+            width: 1000px;
+            margin: 0 auto 0 auto;
+        }
+    </style>
+    <script>
+        function order() {
+            let name = $('#oder_name').val();
+            let count = $('#oder_count').val();
+            let address = $('#oder_address').val();
+            let phone = $('#oder_phone').val();
+      
+            if (name == ''){
+                alert('이름을 입력해주세요')
+                $('#oder_name').focus()
+                return 
+            } els if (count == ''){
+          alert('수량을 입력해주세요')
+          $('#order_count').focus()
+          return
+        } else if (address == ''){
+          alert('주소를 입력해주세요')
+          $('#order_address').focus()
+          return
+        } else if (phone == ''){
+          alert('휴대폰번호를 입력해주세요')
+          $('#order_phone').focus()
+          return
+        }
+        }
+      </script>
+      
+</head>
+
+<body>
+    <div class="style">
+        <div>
+            <img class="img"
+                src=https://bootybuilder.com/wp-content/uploads/BB_Platinum-NEW-2020-768x768.jpg
+                alt="상품 사진">
+        </div>
+        <div>
+            <p class="h1">
+                부티빌더 <a class="h5">가격 : 3,000,000 원 / ea</a>
+            </p>
+            <P class="h5">사과같은 엉덩이의 비결 세계 최초 힙쓰러스트 머신,부티빌더 플래티넘</P>
+        </div>
+        <div>
+            <p class="h1">주문 하기</p>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">주문자 성함</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">수량</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput2">주소</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput3">전화번호</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3">
+                </div>
+            </form>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">주문 하기</button>
+        </div>
+    </div>
+</body>
+
+</html>
