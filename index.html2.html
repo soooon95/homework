@@ -30,23 +30,35 @@
             let phone = $('#oder_phone').val();
 
             if (name == '') {
-                alert('이름을 입력해주세요')
+                alert('이름을 입력해주세요');
                 $('#oder_name').focus()
                 return
             } els if (count == '') {
-                alert('수량을 입력해주세요')
+                alert('수량을 입력해주세요');
                 $('#order_count').focus()
                 return
             } else if (address == '') {
-                alert('주소를 입력해주세요')
+                alert('주소를 입력해주세요');
                 $('#order_address').focus()
                 return
             } else if (phone == '') {
-                alert('휴대폰번호를 입력해주세요')
+                alert('휴대폰번호를 입력해주세요');
                 $('#order_phone').focus()
                 return
-            } else alert ('주문완료!')
+            } 
         }
+        $.ajax({
+            type: "POST",
+            url: "/order",
+            data: { name_give: name, count_give: count, address_give: address, phone_give: phone },
+            success: function (response) {
+                if (response['result'] == 'success') {
+                    alert('주문 완료!');
+                    window.location.reload();
+                }
+            }
+        })
+
     </script>
 
 </head>
